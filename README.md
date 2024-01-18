@@ -16,3 +16,8 @@ The RoomAR app simplifies the process of capturing and digitizing room environme
 ### Development
 
 The RoomAR app is developed using the [SceneView](https://github.com/SceneView/sceneview-android) library in Android Studio using Kotlin.
+
+
+### Notes:
+
+This app succeeeds an older version of the app that did not use Jetpack Compose. [Link](https://github.com/colbehr/RoomGenerator)
