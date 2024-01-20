@@ -20,4 +20,4 @@ The RoomAR app is developed using the [SceneView](https://github.com/SceneView/s
 
 ### Notes:
 
-This app succeeeds an older version of the app that did not use Jetpack Compose. [Link](https://github.com/colbehr/RoomGenerator)
+This app succeeeds an older version of the app that did not use Jetpack Compose. 
