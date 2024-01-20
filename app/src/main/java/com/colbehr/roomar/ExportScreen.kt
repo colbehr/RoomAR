@@ -107,7 +107,7 @@ fun ExportScreen(
 
             Spacer(modifier = Modifier.height(8.dp))
 
-            OptionCheckbox("3D Model", Option.ThreeD in selectedOptions, false) {
+            OptionCheckbox("3D Model", Option.ThreeD in selectedOptions, true) {
                 selectedOptions = if (Option.ThreeD in selectedOptions) {
                     selectedOptions - Option.ThreeD
                 } else {

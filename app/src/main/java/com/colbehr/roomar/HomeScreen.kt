@@ -44,7 +44,7 @@ fun HomeScreen(
     navController: NavController
 ) {
     val context = LocalContext.current
-    val openWelcomeDialog = remember { mutableStateOf(isFirstRun(context)) }
+    val openWelcomeDialog = remember { mutableStateOf(false) }
     setFirstRunFlag(context, false)
     val allFilesAndContents: Map<String, PointData> = getAllFilesContentInInternalStorage(context)
 
@@ -52,11 +52,22 @@ fun HomeScreen(
     var filteredFiles by remember { mutableStateOf(allFilesAndContents) }
 
 
+
     Box(
         modifier = Modifier
             .fillMaxSize()
             .padding(16.dp)
     ) {
+//        BasicText(
+//            modifier = Modifier.padding(0.dp).fillMaxWidth().zIndex(1.2f),
+//            text = "RoomAR",
+//            style = TextStyle(
+//                color = MaterialTheme.colorScheme.onBackground.copy(alpha = 0.2f),
+//                fontSize = 24.sp,
+//                fontWeight = FontWeight.W400,
+//            )
+//        )
+
         SearchBar(
             modifier = Modifier
                 .fillMaxWidth()
@@ -83,7 +94,12 @@ fun HomeScreen(
                     )
                 }
             },
-        ) {}
+
+            ) {
+
+
+        }
+
         Column(
             modifier = Modifier
                 .background(MaterialTheme.colorScheme.surface)
