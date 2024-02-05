@@ -2,6 +2,8 @@
 
 The RoomAR app is an Android application that utilizes augmented reality (AR) technology to generate 3D models of rooms. With the app's simple interface and augmented reality camera, users can effortlessly capture their physical environments, enabling them to export virtual representations of their rooms.
 
+#### [See a video walkthrough of the app here!](https://youtu.be/mNl-dScQfxE)
+
 ### Features
 
 1. **AR Scanning**: The app leverages the power of AR to scan and capture the dimensions of a room. Users simply need to place points in each corner of the room by using their device's camera.
