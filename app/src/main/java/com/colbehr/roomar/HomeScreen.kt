@@ -44,7 +44,7 @@ fun HomeScreen(
     navController: NavController
 ) {
     val context = LocalContext.current
-    val openWelcomeDialog = remember { mutableStateOf(false) }
+    val openWelcomeDialog = remember { mutableStateOf(isFirstRun(context)) }
     setFirstRunFlag(context, false)
     val allFilesAndContents: Map<String, PointData> = getAllFilesContentInInternalStorage(context)
 

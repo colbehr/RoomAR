@@ -31,6 +31,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import androidx.core.content.ContextCompat.startActivity
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
@@ -67,11 +68,19 @@ fun SettingsScreen(
                 painter = painterResource(id = R.drawable.logo_vector),
                 contentDescription = null,
                 modifier = Modifier
-                    .height(180.dp)
+                    .height(120.dp)
                     .clip(CircleShape)
                     .fillMaxWidth()
             )
-
+            Text(
+                text = "RoomAR",
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(top = 16.dp),
+                fontSize = 20.sp, // Adjust the font size as needed
+                textAlign = TextAlign.Center,
+                color = MaterialTheme.colorScheme.onBackground
+            )
             Row(
                 modifier = Modifier
                     .fillMaxWidth()
@@ -93,21 +102,21 @@ fun SettingsScreen(
                     )
                 }
 
-                IconButton(
-                    onClick = {
-                        val url = "https://www.linkedin.com/in/colbehr/"
-
-
-                        val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
-                        startActivity(context, browserIntent, null)
-                    }
-                ) {
-                    Icon(
-                        painter = painterResource(id = R.drawable.linkedin),
-                        contentDescription = null,
-                        tint = MaterialTheme.colorScheme.onBackground
-                    )
-                }
+//                IconButton(
+//                    onClick = {
+//                        val url = "https://www.linkedin.com/in/colbehr/"
+//
+//
+//                        val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
+//                        startActivity(context, browserIntent, null)
+//                    }
+//                ) {
+//                    Icon(
+//                        painter = painterResource(id = R.drawable.linkedin),
+//                        contentDescription = null,
+//                        tint = MaterialTheme.colorScheme.onBackground
+//                    )
+//                }
 
                 IconButton(
                     onClick = {
@@ -125,7 +134,7 @@ fun SettingsScreen(
                 }
             }
             Text(
-                text = "Check me out on Github and feel free to submit a pull request. If you would like to check out more of my work, I have overviews on all my projects on my website.",
+                text = "Check out the project on Github and feel free to submit a pull request!",
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(top = 16.dp),
